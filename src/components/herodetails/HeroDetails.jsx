@@ -1,5 +1,5 @@
 import {Link, useParams} from "react-router-dom";
-import {Box, Typography} from "@mui/material";
+import {Box, ImageList, ImageListItem, Typography} from "@mui/material";
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
 ///import {Timeline, TimelineItem} from 'vertical-timeline-component-for-react'
 
@@ -67,9 +67,26 @@ const HeroDetails = (props) => {
                 ))}
             </Timeline>
         </Box>
-            <Box>
-                
-            </Box>
+        <Box>
+            <ImageList>
+                {hero.photoGallery.map((data)=>(
+                    <ImageListItem>
+                        <img
+                            src={data}
+                        />
+                    </ImageListItem>
+                ))}
+            </ImageList>
+        </Box>
+        <Box>
+            <iframe
+                width="80%"
+                src={hero.youtubeVideo}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title="Embedded youtube"
+            />
+        </Box>
         </main>
     )
 };

@@ -51,7 +51,7 @@ const suicideSquadCharacters = [
         "/photos/Harley Quinn/Harley4.jpg",
         "/photos/Harley Quinn/Harley5.jpg"
       ],
-      youtubeVideo: "https://www.youtube.com/watch?v=jOcyyMBtv6M",
+      youtubeVideo: "https://www.youtube.com/embed/jOcyyMBtv6M",
     },
     {
       id_Hero: 1,
