@@ -1,5 +1,6 @@
 import {Link, useParams} from "react-router-dom";
 import {Box, Typography} from "@mui/material";
+import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
 ///import {Timeline, TimelineItem} from 'vertical-timeline-component-for-react'
 
 const HeroDetails = (props) => {
@@ -48,6 +49,22 @@ const HeroDetails = (props) => {
             </Box>
         </Box>
         <Box>
+            <Timeline>
+                {hero.biography.map((data)=>(
+                  <TimelineItem>
+                    <TimelineOppositeContent>
+                        {data.year}
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                        <TimelineDot/>
+                        <TimelineConnector/>
+                    </TimelineSeparator>
+                    <TimelineContent>
+                        {data.event.get(key)}    
+                    </TimelineContent>
+                  </TimelineItem>  
+                ))}
+            </Timeline>
              {/* <Timeline >
                 {hero.en_biography.map((data)=>(
                     <TimelineItem
