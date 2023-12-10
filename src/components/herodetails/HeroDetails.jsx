@@ -5,10 +5,10 @@ import {Box, Typography} from "@mui/material";
 const HeroDetails = (props) => {
     const key = "ru";
     const {heroData} = props;
-    const {id_Hero} = useParams();
-    const hero = heroData.find((hero)=> hero.id_Hero === Number(id_Hero));
+    const {id} = useParams();
+    const hero = heroData.find((hero)=> hero.id_Hero === Number(id));
     if (!hero)
-        return <div>error</div>
+        return <div>error{Number(id)}</div>
     return (
         <main>
         <Box 

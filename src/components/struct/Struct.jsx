@@ -1,6 +1,6 @@
 const suicideSquadCharacters = [
     {
-      id_Hero: 1,
+      id_Hero: 0,
       name: new Map([
         ["en", "Harley Quinn"],
         ["ru", "Харли Квинн"],
@@ -54,7 +54,7 @@ const suicideSquadCharacters = [
       youtubeVideo: "https://www.youtube.com/watch?v=jOcyyMBtv6M",
     },
     {
-      id_Hero: 2,
+      id_Hero: 1,
       name: new Map([
         ["en", "Rick Flag"],
         ["ru", "Рик Флэг"],
@@ -100,7 +100,7 @@ const suicideSquadCharacters = [
       youtubeVideo: "https://www.youtube.com/watch?v=5I8I-Eplnh0",
     },
     {
-      id_Hero: 3,
+      id_Hero: 2,
       name: new Map([
         ["en", "Katana"],
         ["ru", "Катана"],
@@ -150,7 +150,7 @@ const suicideSquadCharacters = [
       youtubeVideo: "https://www.youtube.com/watch?v=FBEVoh5jS-8",
     },
     {
-      id_Hero: 4,
+      id_Hero: 3,
       name: new Map([
         ["en", "Captain Boomerang"],
         ["ru", "Капитан Бумеранг"],
@@ -200,7 +200,7 @@ const suicideSquadCharacters = [
       youtubeVideo: "https://www.youtube.com/watch?v=vvla_94AVkQ",
     },
     {
-      id_Hero: 5,
+      id_Hero: 4,
       name: new Map([
         ["en", "Joker"],
         ["ru", "Джокер"],
@@ -250,7 +250,7 @@ const suicideSquadCharacters = [
       youtubeVideo: "https://www.youtube.com/watch?v=Yh7KrVgtI6o",
     },
     {
-      id_Hero: 6,
+      id_Hero: 5,
       name: new Map([
         ["en", "Diablo"],
         ["ru", "Диабло"],
@@ -288,7 +288,7 @@ const suicideSquadCharacters = [
       youtubeVideo: "https://www.youtube.com/watch?v=LeBSN_g8_Dc",
     },
     {
-      id_Hero: 7,
+      id_Hero: 6,
       name: new Map([
         ["en", "Deadshot"],
         ["ru", "Дэдшот"],
