@@ -8,7 +8,7 @@ const router = createBrowserRouter([
     path:"/",element: <div>Home</div>
   },
   {
-    path:"/hero/:id",
+    path:"/:lang/hero/:id",
     element: <HeroDetails heroData={suicideSquadCharacters} />,
   }
 ]);

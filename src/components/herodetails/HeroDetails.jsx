@@ -4,9 +4,10 @@ import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem
 ///import {Timeline, TimelineItem} from 'vertical-timeline-component-for-react'
 
 const HeroDetails = (props) => {
-    const key = "ru";
+    
     const {heroData} = props;
-    const {id} = useParams();
+    const {lang,id} = useParams();
+    const key = lang;
     const hero = heroData.find((hero)=> hero.id_Hero === Number(id));
     if (!hero)
         return <div>error{Number(id)}</div>
@@ -65,17 +66,10 @@ const HeroDetails = (props) => {
                   </TimelineItem>  
                 ))}
             </Timeline>
-             {/* <Timeline >
-                {hero.en_biography.map((data)=>(
-                    <TimelineItem
-                        key={data.id}
-                        dateText={data.year}
-                    >
-                     <p>{data.event}</p> 
-                    </TimelineItem>  
-                ))   
-            </Timeline>  */}
         </Box>
+            <Box>
+                
+            </Box>
         </main>
     )
 };
