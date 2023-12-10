@@ -15,14 +15,15 @@ const HeroDetails = (props) => {
         component="div"
         display="flex"
         flexDirection={"row-reverse"}
-        flexWrap={"nowrap"}
+        flexWrap={"wrap"}
+        justifyContent={"space-around"}
         >
             <Box
                 component="img"
                 sx={{
-                    height:200,
-                    width:300
+                    width:300,
                 }}
+                alignSelf="center"
                 src={hero.photo}
             />
             <Box>

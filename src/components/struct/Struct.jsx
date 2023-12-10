@@ -11,7 +11,7 @@ const suicideSquadCharacters = [
       ]),
       inf: new Map([
         ["en", "A supervillainess, later an antiheroine in the DC Comics universe, who was a natural-born gymnast"],
-        ["ru", "Суперзлодейка, позже антигероиня вселенной DC Comics, котороя была прирождённой гимансткой"],
+        ["ru", "Суперзлодейка, позже антигероиня вселенной DC Comics, котороя была прирождённой гиманасткой"],
       ]),
       biography: [
         { id: 1, year: 1992, event: new Map([
