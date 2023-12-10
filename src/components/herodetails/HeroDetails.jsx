@@ -30,19 +30,19 @@ const HeroDetails = (props) => {
                     component="h2"
                     align="center"
                 >
-                    {hero.name}
+                    {hero.name.get(key)}
                 </Typography>  
                 <Typography
                     component="h2"
                     align="center"
                 >
-                    {hero.yearsOfLife}
+                    {hero.yearsOfLife.get(key)}
                 </Typography>   
                 <Typography
                     component="h3"
                     align="center"
                 >
-                    {hero.info}
+                    {hero.inf.get(key)}
                 </Typography>
             </Box>
         </Box>
