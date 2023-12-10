@@ -81,7 +81,7 @@ const HeroDetails = (props) => {
         <Box>
             <iframe
                 width="80%"
-                src={"https://www.youtube.com/embed/"+hero.youtubeVideo}
+                src={`https://www.youtube.com/embed/${hero.youtubeVideo}`}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 title="Embedded youtube"
