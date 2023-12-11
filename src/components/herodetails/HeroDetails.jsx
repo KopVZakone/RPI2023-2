@@ -4,7 +4,6 @@ import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem
 ///import {Timeline, TimelineItem} from 'vertical-timeline-component-for-react'
 
 const HeroDetails = (props) => {
-    
     const {heroData} = props;
     const {lang,id} = useParams();
     const key = lang;
