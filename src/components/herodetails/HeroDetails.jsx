@@ -1,7 +1,8 @@
 import {Link, useParams} from "react-router-dom";
-import {Box, ImageList, ImageListItem, Typography} from "@mui/material";
+import {Box, ImageList, ImageListItem, Stack, Typography} from "@mui/material";
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
+import { Container } from "@mui/system";
 
 const HeroDetails = (props) => {
     const {heroData} = props;
@@ -12,12 +13,11 @@ const HeroDetails = (props) => {
         return <div>error{Number(id)}</div>
     return (
         <main>
-        <Box 
-        component="div"
-        display="flex"
-        flexDirection={"row-reverse"}
-        flexWrap={"wrap"}
-        justifyContent={"space-around"}
+        <Stack         
+        direction="row-reverse"
+        justifyContent="space-around"
+        flexWrap="wrap"
+        spacing={2}
         >
             <Box
                 component="img"
@@ -27,27 +27,28 @@ const HeroDetails = (props) => {
                 alignSelf="center"
                 src={hero.photo}
             />
-            <Box>
+            <Stack 
+            direction="column"
+            alignItems="center"
+            spacing={2}
+            >
                 <Typography
-                    component="h2"
-                    align="center"
+                    component="h1"
                 >
                     {hero.name.get(key)}
                 </Typography>  
                 <Typography
                     component="h2"
-                    align="center"
                 >
                     {hero.yearsOfLife.get(key)}
                 </Typography>   
                 <Typography
                     component="h3"
-                    align="center"
                 >
                     {hero.inf.get(key)}
                 </Typography>
-            </Box>
-        </Box>
+            </Stack>
+        </Stack>
         <Box>
             <Timeline>
                 {hero.biography.map((data)=>(
@@ -77,14 +78,17 @@ const HeroDetails = (props) => {
                 ))}
             </ImageList>
         </Box>
-        <Box>
-            <iframe
-                width="80%"
-                src={`https://www.youtube.com/embed/${hero.youtubeVideo}`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Embedded youtube"
-            />
+        <Box
+            minHeight={300}
+        >
+            <center>
+                <iframe                    
+                    src={`https://www.youtube.com/embed/${hero.youtubeVideo}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Embedded youtube"
+                />
+            </center>
         </Box>
         <Box>
             <YMaps>

@@ -54,9 +54,8 @@ const HeroSearch = (props) => {
                                     </Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <Button onClick={() => {
-                                        navigate(`/${lang}/hero/${hero.id_Hero}`)
-                                    }}
+                                    <Button
+                                        href={`/${lang}/hero/${hero.id_Hero}`}
                                         size="small">See more</Button>
                                 </CardActions>
                             </Card>
