@@ -1,7 +1,7 @@
 import {Link, useParams} from "react-router-dom";
 import {Box, ImageList, ImageListItem, Typography} from "@mui/material";
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
-///import {Timeline, TimelineItem} from 'vertical-timeline-component-for-react'
+import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 
 const HeroDetails = (props) => {
     const {heroData} = props;
@@ -85,6 +85,15 @@ const HeroDetails = (props) => {
                 allowFullScreen
                 title="Embedded youtube"
             />
+        </Box>
+        <Box>
+            <YMaps>
+                <div>
+                    <Map height="500px" width="500px" defaultState={{ center: [34.1495070358921, -118.33776346064823], zoom: 17 }}>
+                    <Placemark geometry={[34.1495070358921, -118.33776346064823]} />
+                    </Map>
+                </div>
+            </YMaps>
         </Box>
         </main>
     )
