@@ -13,7 +13,7 @@ const suicideSquadCharacters = [
       ["en", "A supervillainess, later an antiheroine in the DC Comics universe, who was a natural-born gymnast"],
       ["ru", "Суперзлодейка, позже антигероиня вселенной DC Comics, котороя была прирождённой гиманасткой"],
     ]),
-    biography: [
+    сhronography: [
       { id: 1, year: 1992, event: new Map([
         ["en", "First appearance in Batman: The Animated Series"],
         ["ru", "Первое появление в мультсериале 'Бэтмен: Анимационные приключения'"],
@@ -39,6 +39,25 @@ const suicideSquadCharacters = [
         ["ru", "Персонаж представлен в 'Отряд самоубийц: Миссия навылет'"],
       ]) },
     ],
+    biography: new Map([["en", [
+      "Harley Quinn is a fictional character created for DC Comics.", 
+      "Her real name is Harleen Frances Quinzel.", 
+      "She first appeared in comics in 1992 in 'Batman: The Animated Series.'",
+      "Harley was a psychiatrist at Arkham Asylum, where she fell in love with the Joker and became his loyal accomplice.",
+      "Underwent various changes in costume and character, becoming one of the most popular DC characters.",
+      "Her relationship with the Joker and her pursuit of self-expression distinguish Harley Quinn in the world of comics.",
+      "She has also played a key role in various animated series, video games, and films, emphasizing her uniqueness in the DC universe."
+    ]],
+    ["ru", [
+      "Харли Квинн – вымышленный персонаж, созданный для комиксов DC Comics.", 
+      "Её настоящее имя – Харлин Фрэнсис Квинзель.", 
+      "Появилась в комиксах в 1992 году в 'Batman: The Animated Series'.", 
+      "Харли была психиатром в Аркхемской больнице, где она влюбилась в Джокера и стала его верной сообщницей.", 
+      "Прошла через различные изменения в костюме и характере, став одним из самых популярных персонажей DC.", 
+      "Её отношения с Джокером и стремление к самовыражению выделяют Харли Квинн в мире комиксов.", 
+      "Она также играла ключевую роль в различных мультфильмах, видеоиграх и фильмах, подчеркивая свою уникальность во вселенной DC."
+    ]]
+  ]),
     locationOnMap: new Map([
       ["en", "None"],
       ["ru", "Не известно"],
@@ -67,7 +86,7 @@ const suicideSquadCharacters = [
       ["en", "An elite soldier and government agent working in Task Force 'X'"],
       ["ru", "Элитный солдат и правительственный агент, работающий в Оперативной Группе 'Х'"],
     ]),
-    biography: [
+    сhronography: [
       { id: 1, year: 1959, event: new Map([
         ["en", "First appearance in The Brave and the Bold #25"],
         ["ru", "Первое появление в комиксе 'Смелый и смелый #25'"],
@@ -85,6 +104,25 @@ const suicideSquadCharacters = [
         ["ru", "Сыграл Джоэлом Киннаманом в фильме 'Отряд самоубийц: Миссия навылет'"],
       ]) },
     ],
+    biography: new Map([
+      ["en", [
+        "Rick Flag is a character from DC Comics, whose full name is Richard Flag Jr.",
+        "He is an experienced military officer and the leader of an anti-terrorism group.",
+        "The character first appeared in comics in 1959.",
+        "Rick Flag is often associated with national security tasks and confronting supernatural threats.",
+        "Rick Flag has gone through various periods in comics, appearing in different DC comic series.",
+        "His bravery, strategic intelligence, and dedication to service make him a significant figure in the DC universe."
+      ]],
+      ["ru", [
+        "Рик Флэг - персонаж из комиксов DC Comics, чье полное имя - Ричард Флагг младший.",
+        "Он является опытным военным и лидером анти-террористической группы.",
+        "Персонаж впервые появился в комиксах в 1959 году.",
+        "Рика Флэга часто связывают с задачами национальной безопасности и противостоянием сверхъестественным угрозам.",
+        "Рик Флэг прошел через различные периоды в комиксах, присутствуя в различных комикс-сериях DC.",
+        "Его храбрость, стратегический склад ума и приверженность службе делают его важной фигурой во вселенной DC."
+      ]]
+    ]),
+    
     locationOnMap: new Map([
       ["en", "None"],
       ["ru", "Не известно"],
@@ -113,7 +151,7 @@ const suicideSquadCharacters = [
       ["en", "A samurai warrior whose skill with a sword allows her to fight for justice as a superheroine"],
       ["ru", "Самурайский воин, чье мастерство владения мечом позволяет ей сражаться за справедливость в роли супергероини"],
     ]),
-    biography: [
+    сhronography: [
       { id: 1, year: 1983, event: new Map([
         ["en", "First appearance in The Brave and the Bold #200"],
         ["ru", "Первое появление в комиксе 'Смелый и смелый #200'"],
@@ -135,6 +173,24 @@ const suicideSquadCharacters = [
         ["ru", "Сыграла Карен Фукухара в фильме 'Отряд самоубийц: Миссия навылет'"],
       ]) },
     ],
+    biography: new Map([
+      ["en",  [
+        "Katana is a DC Comics character, whose real name is Tatsu Yamashiro.",
+        "She debuted in comics in 1983.",
+        "Katana is a master of the sword and martial arts with a profound Japanese heritage.",
+        "Her sword, Soultaker, has the ability to trap the souls of those it kills.",
+        "Characterized as a strong and independent heroine, Katana often interacts with other superheroes in the defense of the world against threats.",
+        "She has also been part of the 'Suicide Squad' in various comics and adaptations, contributing to the storyline and dynamics of the team."
+      ]],
+      ["ru", [
+        "Катана – персонаж DC Comics, настоящее имя которой Тацу Ямаширо.",
+        "Она дебютировала в комиксах в 1983 году.",
+        "Катана – мастер меча и боевых искусств с глубоким японским наследием.",
+        "Её меч, Соултиейкер, обладает способностью удерживать души убитых им противников.",
+        "Характеризуется как сильная и независимая героиня, Катана часто взаимодействует с другими супергероями в защите мира от угроз.",
+        "Она также была частью 'Отряда самоубийц' в различных комиксах и адаптациях, внося свой вклад в сюжет и динамику команды."
+      ]]
+    ]),    
     locationOnMap: new Map([
       ["en", "None"],
       ["ru", "Не известно"],
@@ -163,7 +219,7 @@ const suicideSquadCharacters = [
       ["en", "Captain Boomerang - the name of two supervillains appearing in American comic books"],
       ["ru", "Капитан Бумеранг - имя двух суперзлодеев, появившихся в американских комиксах"],
     ]),
-    biography: [
+    сhronography: [
       { id: 1, year: 1960, event: new Map([
         ["en", "First appearance in The Flash #117"],
         ["ru", "Первое появление в фильме 'Флэш' #117"],
@@ -185,6 +241,24 @@ const suicideSquadCharacters = [
         ["ru", "Сыграл Джай Кортни в фильме 'Отряд самоубийц: Миссия навылет'"],
       ]) },
     ],
+    biography: new Map([
+      ["en",  [
+        "Captain Boomerang, real name George Harkness, is a DC Comics character.",
+        "He first appeared in comics in 1960.",
+        "Captain Boomerang is known for his expertise in throwing boomerangs and using them as deadly weapons.",
+        "Harkness often serves as an antagonist to various superheroes, including the Flash.",
+        "He has also been a member of the 'Suicide Squad' in various comics and adaptations,", 
+        "where his agility and unorthodox methods make him an intriguing character in the context of team adventures."
+      ]],
+      ["ru", [
+        "Капитан Бумеранг, настоящее имя Джордж Харкуорт, — персонаж DC Comics.",
+        "Он впервые появился в комиксах в 1960 году.",
+        "Капитан Бумеранг известен своим мастерством в метании бумерангов и использовании их в качестве смертоносного оружия.",
+        "Харкуорт часто выступает в роли антагониста для различных супергероев, включая Флэша.",
+        "Он также был членом 'Отряда самоубийц' в различных комиксах и экранизациях,", 
+        "где его ловкость и неортодоксальные методы делают его интересным персонажем в контексте командных приключений."
+      ]]
+    ]),  
     locationOnMap: new Map([
       ["en", "None"],
       ["ru", "Не известно"],
@@ -213,7 +287,7 @@ const suicideSquadCharacters = [
       ["en", "A supervillain from DC Comics, the main and arch-enemy of the superhero Batman"],
       ["ru", "Суперзлодей DC Comics, главный и заклятый враг супергероя Бэтмена"],
     ]),
-    biography: [
+    сhronography: [
       { id: 1, year: 1940, event: new Map([
         ["en", "First appearance in Batman #1"],
         ["ru", "Первое появление в фильме 'Бэтмэн' #1"],
@@ -235,6 +309,24 @@ const suicideSquadCharacters = [
         ["ru", "Персонаж представлен в 'Джокер: Безумие на двоих'"],
       ]) },
     ],
+    biography: new Map([
+      ["en",  [
+        "The Joker is one of the most iconic villains in the DC Comics universe.",
+        "His real name often remains a mystery, and his origin is often portrayed as enigmatic.",
+        "The Joker first appeared in comics in 1940.",
+        "Characterized by his madness, dark humor, and a penchant for chaos, the Joker has become the archetypal nemesis of Batman.",
+        "His relationship with Harley Quinn, unique style, and ambiguity regarding his motives make him one of the most memorable characters in comics.",
+        "The Joker frequently appears in various animated series, films, and other adaptations, emphasizing his role as one of the most famous antagonists in comic book history."
+      ]],
+      ["ru", [
+        "Джокер – один из наиболее известных злодеев во вселенной DC Comics.",
+        "Его настоящее имя часто остается загадкой, и его происхождение часто представляется загадочным.",
+        "Джокер впервые появился в комиксах в 1940 году.",
+        "Характеризуется своим безумием, черным юмором и стремлением к хаосу, Джокер стал архетипическим врагом Бэтмена.",
+        "Его отношения с Харли Квинн, его уникальный стиль и неопределенность в плане мотивации делают его одним из самых запоминающихся персонажей комиксов.",
+        "Джокер часто появляется в различных мультфильмах, фильмах и других адаптациях, подчеркивая свою роль как одного из самых знаменитых антагонистов в истории комиксов."
+      ]]
+    ]),    
     locationOnMap: new Map([
       ["en", "None"],
       ["ru", "Не известно"],
@@ -263,7 +355,7 @@ const suicideSquadCharacters = [
       ["en", "Pyrokinetic - from childhood, capable of controlling fire and heat; his powers grew as he matured"],
       ["ru", "Пирокинетик - с детства способен управлять огнём и теплом, его силы росли по мере взросления"],
     ]),
-    biography: [
+    сhronography: [
       { id: 1, year: 2016, event: new Map([
         ["en", "Portrayed by Jay Hernandez in the Suicide Squad movie"],
         ["ru", "Сыграл Джей Хернандесом в фильме 'Отряд самоубийц'"],
@@ -273,6 +365,27 @@ const suicideSquadCharacters = [
         ["ru", "Персонаж представлен в фильме 'Отряд самоубийц: Миссия навылет'"],
       ]) },
     ],
+    biography: new Map([
+      ["en",  [
+        "Diablo, also known as El Diablo or Chato Santana, is a DC Comics character.",
+        "His real name is Lazarus Lane.",
+        "He first appeared in comics in 1970.",
+        "Diablo possesses the ability to manipulate fire and shape it into various forms, including fiery demons.",
+        "Lazarus Lane has a complex journey, transitioning from a criminal career to seeking redemption.",
+        "In various comics and adaptations, he becomes a key member of the 'Suicide Squad.'",
+        "His inner conflict and quest for redemption add depth to this character in the DC universe."
+      ]],
+      ["ru", [
+        "Диабло, также известный как Эль Диабло или Чато Сантана, — персонаж DC Comics.",
+        "Его настоящее имя — Лазаро Валентино.",
+        "Первоначально появился в комиксах в 1970 году.",
+        "Диабло обладает способностью манипулировать огнем и создавать из него различные формы, включая огненных демонов.",
+        "Лазаро Валентино прошел сложный путь от криминальной карьеры до поиска искупления.",
+        "В различных комиксах и адаптациях он становится ключевым членом 'Отряда самоубийц'.",
+        "Его внутренний конфликт и стремление к искуплению придают глубину этому персонажу в мире DC."
+      ]]
+    ]),
+    
     locationOnMap: new Map([
       ["en", "None"],
       ["ru", "Не известно"],
@@ -301,7 +414,7 @@ const suicideSquadCharacters = [
       ["en", "A character in the DC Comics universe, an enemy of Batman"],
       ["ru", "Персонаж вселенной DC Comics, враг Бэтмена"],
     ]),
-    biography: [
+    сhronography: [
       { id: 1, year: 1950, event: new Map([
         ["en", "First appearance in the comic book Batman #59"],
         ["ru", "Первое появление в комиксе Бэтмен #59"],
@@ -315,6 +428,24 @@ const suicideSquadCharacters = [
         ["ru", "Персонаж представлен в фильме 'Отряд самоубийц: Миссия навылет'"],
       ]) },
     ],
+    biography: new Map([
+      ["en",  [
+        "Deadshot, real name Floyd Lawton, is a DC Comics character.",
+        "He first appeared in comics in 1950.",
+        "Deadshot is an expert marksman with almost impeccable accuracy.",
+        "His cold and calculating nature makes him one of the best assassins in the DC universe.",
+        "Lawton often encounters numerous superheroes and antiheroes, including the 'Suicide Squad,' where he plays a crucial role.",
+        "His military experience, amorality, and personal motivations create a complex and intriguing character in the world of comics."
+      ]],
+      ["ru", [
+        "Дэдшот, настоящее имя Флойд Лоутон, — персонаж DC Comics.",
+        "Он впервые появился в комиксах в 1950 году.",
+        "Дэдшот является опытным стрелком с практически безошибочным метанием.",
+        "Его холодный и калькулирующий характер делают его одним из лучших наемных убийц в мире DC.",
+        "Лоутон часто сталкивается с бесчисленными супергероями и антигероями, в том числе с 'Отрядом самоубийц', где он играет ключевую роль.",
+        "Его военный опыт, аморальность и собственные мотивации создают сложный и интригующий образ в мире комиксов."
+      ]]
+    ]),    
     locationOnMap: new Map([
       ["en", "None"],
       ["ru", "Не известно"],
