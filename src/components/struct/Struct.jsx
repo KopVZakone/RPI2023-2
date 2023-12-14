@@ -62,15 +62,57 @@ const suicideSquadCharacters = [
       ["en", "None"],
       ["ru", "Не известно"],
     ]),
-    photo: "/photos/Harley Quinn/HarleyMain.jpg",
+    photo: {
+      src: "/photos/Harley Quinn/HarleyMain.jpg",
+      alt: new Map([
+        ["en", "Harley Quinn in her iconic pose"],
+        ["ru", "Харли Квинн в своей знаковой позе"]
+      ])
+    },
     photoGallery: [
-      "/photos/Harley Quinn/Harley1.jpg",
-      "/photos/Harley Quinn/Harley2.jpg",
-      "/photos/Harley Quinn/Harley3.jpg",
-      "/photos/Harley Quinn/Harley4.jpg",
-      "/photos/Harley Quinn/Harley5.jpg"
+      { 
+        src: "/photos/Harley Quinn/Harley1.jpg", 
+        alt: new Map([
+          ["en", "Harley Quinn with a playful expression"],
+          ["ru", "Харли Квинн с игривым выражением"]
+        ])
+      },
+      { 
+        src: "/photos/Harley Quinn/Harley2.jpg", 
+        alt: new Map([
+          ["en", "Close-up of Harley Quinn's mischievous smile"],
+          ["ru", "Макро с шаловливой улыбкой Харли Квинн"]
+        ])
+      },
+      { 
+        src: "/photos/Harley Quinn/Harley3.jpg", 
+        alt: new Map([
+          ["en", "Harley Quinn in a dynamic action pose"],
+          ["ru", "Харли Квинн в динамичной позе действия"]
+        ])
+      },
+      { 
+        src: "/photos/Harley Quinn/Harley4.jpg", 
+        alt: new Map([
+          ["en", "Harley Quinn showcasing her unique style"],
+          ["ru", "Харли Квинн демонстрирует свой уникальный стиль"]
+        ])
+      },
+      { 
+        src: "/photos/Harley Quinn/Harley5.jpg", 
+        alt: new Map([
+          ["en", "Harley Quinn with her signature weapon"],
+          ["ru", "Харли Квинн со своим характерным оружием"]
+        ])
+      }
     ],
-    youtubeVideo: "jOcyyMBtv6M",
+    youtubeVideo: {
+      id: "jOcyyMBtv6M",
+      title: new Map([
+        ["en", "Harley Quinn's evolution video"],
+        ["ru", "Видео: эволиция Харли Квинн"]
+      ])
+    }
   },
   {
     id_Hero: 1,
@@ -127,15 +169,57 @@ const suicideSquadCharacters = [
       ["en", "None"],
       ["ru", "Не известно"],
     ]),
-    photo: "/photos/Rick Flag/RF1.webp",
+    photo: {
+      src: "/photos/Rick Flag/RF1.webp",
+      alt: new Map([
+        ["en", "Rick Flag in a heroic pose"],
+        ["ru", "Рик Флэг в героической позе"]
+      ])
+    },
     photoGallery: [
-      "/photos/Rick Flag/RF1.webp",
-      "/photos/Rick Flag/RF2.png",
-      "/photos/Rick Flag/RF3.png",
-      "/photos/Rick Flag/RF4.png",
-      "/photos/Rick Flag/RF5.png"
+      { 
+        src: "/photos/Rick Flag/RF1.webp", 
+        alt: new Map([
+          ["en", "Rick Flag in a heroic pose"],
+          ["ru", "Рик Флэг в героической позе"]
+        ])
+      },
+      { 
+        src: "/photos/Rick Flag/RF2.png", 
+        alt: new Map([
+          ["en", "Close-up of Rick Flag's determined expression"],
+          ["ru", "Макро с решительным выражением лица Рика Флэга"]
+        ])
+      },
+      { 
+        src: "/photos/Rick Flag/RF3.png", 
+        alt: new Map([
+          ["en", "Rick Flag in tactical gear"],
+          ["ru", "Рик Флэг в тактическом снаряжении"]
+        ])
+      },
+      { 
+        src: "/photos/Rick Flag/RF4.png", 
+        alt: new Map([
+          ["en", "Rick Flag leading the squad"],
+          ["ru", "Рик Флэг ведёт отряд"]
+        ])
+      },
+      { 
+        src: "/photos/Rick Flag/RF5.png", 
+        alt: new Map([
+          ["en", "Rick Flag with a determined look"],
+          ["ru", "Рик Флэг с решительным взглядом"]
+        ])
+      }
     ],
-    youtubeVideo: "5I8I-Eplnh0",
+    youtubeVideo: {
+      id: "5I8I-Eplnh0",
+      title: new Map([
+        ["en", "Rick Flag's evolution video"],
+        ["ru", "Видео: эволюция Рика Флэга"]
+      ])
+    }
   },
   {
     id_Hero: 2,
@@ -195,15 +279,57 @@ const suicideSquadCharacters = [
       ["en", "None"],
       ["ru", "Не известно"],
     ]),
-    photo: "/photos/Katana/Kat1.jpg",
+    photo: {
+      src: "/photos/Katana/Kat1.jpg",
+      alt: new Map([
+        ["en", "Katana wielding her deadly sword"],
+        ["ru", "Катана смертоносно владеет своим мечом"]
+      ])
+    },
     photoGallery: [
-      "/photos/Katana/Kat1.jpg",
-      "/photos/Katana/Kat2.jpg",
-      "/photos/Katana/Kat3.jpg",
-      "/photos/Katana/Kat4.jpg",
-      "/photos/Katana/Kat5.jpg"
+      { 
+        src: "/photos/Katana/Kat1.jpg", 
+        alt: new Map([
+          ["en", "Katana wielding her deadly sword"],
+          ["ru", "Катана смертоносно владеет своим мечом"]
+        ])
+      },
+      { 
+        src: "/photos/Katana/Kat2.jpg", 
+        alt: new Map([
+          ["en", "Close-up of Katana's focused gaze"],
+          ["ru", "Макро с сосредоточенным взглядом Катаны"]
+        ])
+      },
+      { 
+        src: "/photos/Katana/Kat3.jpg", 
+        alt: new Map([
+          ["en", "Katana in a defensive stance"],
+          ["ru", "Катана в защитной позе"]
+        ])
+      },
+      { 
+        src: "/photos/Katana/Kat4.jpg", 
+        alt: new Map([
+          ["en", "Katana demonstrating precision with her blade"],
+          ["ru", "Катана демонстрирует точность своего клинка"]
+        ])
+      },
+      { 
+        src: "/photos/Katana/Kat5.jpg", 
+        alt: new Map([
+          ["en", "Katana with a determined expression"],
+          ["ru", "Катана с решительным выражением лица"]
+        ])
+      }
     ],
-    youtubeVideo: "FBEVoh5jS-8",
+    youtubeVideo: {
+      id: "FBEVoh5jS-8",
+      title: new Map([
+        ["en", "Katana's evolution video"],
+        ["ru", "Видео: эволюция Катаны"]
+      ])
+    }
   },
   {
     id_Hero: 3,
@@ -263,15 +389,57 @@ const suicideSquadCharacters = [
       ["en", "None"],
       ["ru", "Не известно"],
     ]),
-    photo: "/photos/Captain Boomerang/CB1.jpg",
+    photo: {
+      src: "/photos/Captain Boomerang/CB1.jpg",
+      alt: new Map([
+        ["en", "Captain Boomerang with his lethal boomerangs"],
+        ["ru", "Капитан Бумеранг с его смертоносными бумерангами"]
+      ])
+    },
     photoGallery: [
-      "/photos/Captain Boomerang/CB1.jpg",
-      "/photos/Captain Boomerang/CB2.jpg",
-      "/photos/Captain Boomerang/CB3.jpg",
-      "/photos/Captain Boomerang/CB4.jpg",
-      "/photos/Captain Boomerang/CB5.jpg"
+      { 
+        src: "/photos/Captain Boomerang/CB1.jpg", 
+        alt: new Map([
+          ["en", "Captain Boomerang with his lethal boomerangs"],
+          ["ru", "Капитан Бумеранг с его смертоносными бумерангами"]
+        ])
+      },
+      { 
+        src: "/photos/Captain Boomerang/CB2.jpg", 
+        alt: new Map([
+          ["en", "Close-up of Captain Boomerang's boomerang throw"],
+          ["ru", "Макро с метанием бумеранга Капитана Бумеранга"]
+        ])
+      },
+      { 
+        src: "/photos/Captain Boomerang/CB3.jpg", 
+        alt: new Map([
+          ["en", "Captain Boomerang in a dynamic pose"],
+          ["ru", "Капитан Бумеранг в динамичной позе"]
+        ])
+      },
+      { 
+        src: "/photos/Captain Boomerang/CB4.jpg", 
+        alt: new Map([
+          ["en", "Captain Boomerang preparing to throw"],
+          ["ru", "Капитан Бумеранг готовится бросить"]
+        ])
+      },
+      { 
+        src: "/photos/Captain Boomerang/CB5.jpg", 
+        alt: new Map([
+          ["en", "Captain Boomerang with a mischievous smile"],
+          ["ru", "Капитан Бумеранг с шаловливой улыбкой"]
+        ])
+      }
     ],
-    youtubeVideo: "vvla_94AVkQ",
+    youtubeVideo: {
+      id: "vvla_94AVkQ",
+      title: new Map([
+        ["en", "Captain Boomerang's evolution video"],
+        ["ru", "Видео: эволюция Капитана Бумеранга"]
+      ])
+    }
   },
   {
     id_Hero: 4,
@@ -329,17 +497,58 @@ const suicideSquadCharacters = [
     ]),    
     locationOnMap: new Map([
       ["en", "None"],
-      ["ru", "Не известно"],
+      ["ru", "Не известно"]
     ]),
-    photo: "/photos/Joker/Jok1.jpg",
+    photo: {
+      src: "/photos/Joker/Jok1.jpg",
+      alt: new Map([
+        ["en", "The Joker with a sinister smile"],
+        ["ru", "Джокер с зловещей улыбкой"]])
+    },
     photoGallery: [
-      "/photos/Joker/Jok1.jpg",
-      "/photos/Joker/Jok2.jpg",
-      "/photos/Joker/Jok3.jpg",
-      "/photos/Joker/Jok4.jpg",
-      "/photos/Joker/Jok5.jpg"
+      { 
+        src: "/photos/Joker/Jok1.jpg", 
+        alt: new Map([
+          ["en", "The Joker with a sinister smile"],
+          ["ru", "Джокер с зловещей улыбкой"]
+        ])
+      },
+      { 
+        src: "/photos/Joker/Jok2.jpg", 
+        alt: new Map([
+          ["en", "Close-up of the Joker's maniacal laughter"],
+          ["ru", "Макро с безумным смехом Джокера"]
+        ])
+      },
+      { 
+        src: "/photos/Joker/Jok3.jpg", 
+        alt: new Map([
+          ["en", "The Joker in iconic purple suit"],
+          ["ru", "Джокер в знаковом фиолетовом костюме"]
+        ])
+      },
+      { 
+        src: "/photos/Joker/Jok4.jpg", 
+        alt: new Map([
+          ["en", "The Joker surrounded by chaos"],
+          ["ru", "Джокер, окруженный хаосом"]
+        ])
+      },
+      { 
+        src: "/photos/Joker/Jok5.jpg", 
+        alt: new Map([
+          ["en", "The Joker with a playing card"],
+          ["ru", "Джокер с игральной картой"]
+        ])
+      }
+      
     ],
-    youtubeVideo: "Yh7KrVgtI6o",
+    youtubeVideo: {
+      id: "Yh7KrVgtI6o",
+      title: new Map([
+        ["en", "Joker's evolution video"],
+        ["ru", "Видео: эволюция Джокера"]])
+    }
   },
   {
     id_Hero: 5,
@@ -390,15 +599,57 @@ const suicideSquadCharacters = [
       ["en", "None"],
       ["ru", "Не известно"],
     ]),
-    photo: "/photos/Diablo/Di1.jpg",
+    photo: {
+      src: "/photos/Diablo/Di1.jpg",
+      alt: new Map([
+        ["en", "Diablo in a powerful stance"],
+        ["ru", "Дьябло в могущественной позе"]
+      ])
+    },
     photoGallery: [
-      "/photos/Diablo/Di1.jpg",
-      "/photos/Diablo/Di2.jpg",
-      "/photos/Diablo/Di3.jpg",
-      "/photos/Diablo/Di4.jpg",
-      "/photos/Diablo/Di5.jpg"
+      { 
+        src: "/photos/Diablo/Di1.jpg", 
+        alt: new Map([
+          ["en", "Diablo in a powerful stance"],
+          ["ru", "Дьябло в могущественной позе"]
+        ])
+      },
+      { 
+        src: "/photos/Diablo/Di2.jpg", 
+        alt: new Map([
+          ["en", "Close-up of Diablo's fiery appearance"],
+          ["ru", "Макро с пламенным обликом Дьябло"]
+        ])
+      },
+      { 
+        src: "/photos/Diablo/Di3.jpg", 
+        alt: new Map([
+          ["en", "Diablo displaying supernatural abilities"],
+          ["ru", "Дьябло демонстрирует сверхъестественные способности"]
+        ])
+      },
+      { 
+        src: "/photos/Diablo/Di4.jpg", 
+        alt: new Map([
+          ["en", "Diablo surrounded by mystical energy"],
+          ["ru", "Дьябло, окруженный мистической энергией"]
+        ])
+      },
+      { 
+        src: "/photos/Diablo/Di5.jpg", 
+        alt: new Map([
+          ["en", "Diablo with a menacing expression"],
+          ["ru", "Дьябло с угрожающим выражением лица"]
+        ])
+      }
     ],
-    youtubeVideo: "LeBSN_g8_Dc",
+    youtubeVideo: {
+      id: "LeBSN_g8_Dc",
+      title: new Map([
+        ["en", "Diablo's evolution video"],
+        ["ru", "Видео: эволюция Диабло"]
+      ])
+    }
   },
   {
     id_Hero: 6,
@@ -450,15 +701,57 @@ const suicideSquadCharacters = [
       ["en", "None"],
       ["ru", "Не известно"],
     ]),
-    photo: "/photos/Dead Shot/DS1.jpg",
+    photo: {
+      src: "/photos/Dead Shot/DS1.jpg",
+      alt: new Map([
+        ["en", "Deadshot aiming with precision"],
+        ["ru", "Дэдшот целится с высокой точностью"]
+      ])
+    },
     photoGallery: [
-      "/photos/Dead Shot/DS1.jpg",
-      "/photos/Dead Shot/DS2.jpg",
-      "/photos/Dead Shot/DS3.png",
-      "/photos/Dead Shot/DS4.png",
-      "/photos/Dead Shot/DS5.png"
+      { 
+        src: "/photos/Dead Shot/DS1.jpg", 
+        alt: new Map([
+          ["en", "Deadshot aiming with precision"],
+          ["ru", "Дэдшот целится с высокой точностью"]
+        ])
+      },
+      { 
+        src: "/photos/Dead Shot/DS2.jpg", 
+        alt: new Map([
+          ["en", "Close-up of Deadshot's intense gaze"],
+          ["ru", "Макро с интенсивным взглядом Дэдшота"]
+        ])
+      },
+      { 
+        src: "/photos/Dead Shot/DS3.png", 
+        alt: new Map([
+          ["en", "Deadshot in action with firearms"],
+          ["ru", "Дэдшот в действии с огнестрельным оружием"]
+        ])
+      },
+      { 
+        src: "/photos/Dead Shot/DS4.png", 
+        alt: new Map([
+          ["en", "Deadshot with iconic mask"],
+          ["ru", "Дэдшот с знаковой маской"]
+        ])
+      },
+      { 
+        src: "/photos/Dead Shot/DS5.png", 
+        alt: new Map([
+          ["en", "Deadshot showcasing marksmanship"],
+          ["ru", "Дэдшот демонстрирует меткость"]
+        ])
+      }
     ],
-    youtubeVideo: "F2nJy2a5c7A",
-  },
+    youtubeVideo: {
+      id: "F2nJy2a5c7A",
+      title: new Map([
+        ["en", "Deadshot's evolution video"],
+        ["ru", "Видео: эволюция Дэдшота"]
+      ])
+    }
+  }
 ];
 export default suicideSquadCharacters;
