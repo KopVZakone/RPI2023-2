@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Box, Typography, Grid, CardMedia, CardContent, CardActions, Container, Button, Card } from "@mui/material";
 
 const HeroSearch = (props) => {
-    const navigate = useNavigate();
+
     const { heroData } = props;
     const { lang } = useParams();
 

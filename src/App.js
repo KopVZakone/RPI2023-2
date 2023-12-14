@@ -1,12 +1,19 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Navigate, redirect, RouterProvider } from 'react-router-dom';
 import HeroDetails from './components/herodetails/HeroDetails';
 import suicideSquadCharacters from './components/struct/Struct';
 import HeroSearch from './components/hero_list/hero_search';
+import Home from './components/home/Home';
 
 const router = createBrowserRouter([
   {
-    path: "/", element: <div>Home</div>
+    path: "", element: <Navigate to="/en"/>
+  },
+  {
+    path: "/:lang", element: <Home heroData={suicideSquadCharacters}/>
+  },
+  {
+    path: "/search", element: <Navigate to="/en/search"/>
   },
   {
     path: "/:lang/search",
