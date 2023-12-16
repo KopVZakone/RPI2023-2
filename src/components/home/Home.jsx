@@ -82,15 +82,15 @@ const Home = (props)=>{
                             <CardMedia>
                                 <Avatar
                                 alt="logo"
-                                src="icons/logo1.png"
+                                src="icons/logo3.png"
                                 sx={{ width: 100, height:100 }}/>
                             </CardMedia>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    KopVZakone
+                                    KirillStolbov
                                 </Typography>
                                 <Typography>
-                                    https://github.com/KopVZakone
+                                    https://github.com/KirillStolbov
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -100,15 +100,15 @@ const Home = (props)=>{
                             <CardMedia display="flex" justifyContent="center">
                                 <Avatar
                                 alt="logo"
-                                src="icons/logo1.png"
+                                src="icons/logo2.png"
                                 sx={{ width: 100, height:100 }}/>
                             </CardMedia>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    KopVZakone
+                                    1Arsen1
                                 </Typography>
                                 <Typography>
-                                    https://github.com/KopVZakone
+                                    https://github.com/1Arsen1
                                 </Typography>
                             </CardContent>
                         </Card>
