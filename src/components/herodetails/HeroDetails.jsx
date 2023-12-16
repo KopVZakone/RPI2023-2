@@ -25,7 +25,7 @@ const HeroDetails = (props) => {
             <Box
                 component="img"
                 sx={{
-                    height:400,
+                    maxHeight:500
                 }}
                 alignSelf="center"
                 src={hero.photo.src}
@@ -36,7 +36,7 @@ const HeroDetails = (props) => {
             alignItems="center"
             spacing={2}
             >
-                <Typography variant="h4">
+                <Typography variant="h3">
                     {hero.name.get(lang)}
                 </Typography>  
                 <Typography variant="h5">
@@ -78,13 +78,13 @@ const HeroDetails = (props) => {
                 ))}
             </Timeline>
         </Box>
-        <Box>
+        <Box display="flex" flexDirection="column" alignItems="center">
             <Typography variant="h4" textAlign="center">
                 {t("hero.gallery")}
             </Typography>
-            <ImageList>
+            <ImageList sx={{ width: 900, height: 600 }} cols={1} rowHeight={600}>
                 {hero.photoGallery.map((data)=>(
-                    <ImageListItem>
+                    <ImageListItem Height={700}>
                         <img
                             src={data.src}
                             alt={data.alt.get(lang)}
@@ -124,4 +124,5 @@ const HeroDetails = (props) => {
         </main>
     )
 };
+
 export default HeroDetails;
