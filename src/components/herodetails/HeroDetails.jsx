@@ -1,5 +1,5 @@
 import {Link, useParams} from "react-router-dom";
-import {Box, Container, ImageList, ImageListItem, Stack, Typography} from "@mui/material";
+import {Box, Container, ImageList, ImageListItem, ImageListItemBar, Stack, Typography} from "@mui/material";
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import Header from './../header/Header'
@@ -89,6 +89,7 @@ const HeroDetails = (props) => {
                             src={data.src}
                             alt={data.alt.get(lang)}
                         />
+                        <ImageListItemBar title={data.alt.get(lang)}/>
                     </ImageListItem>
                 ))}
             </ImageList>
@@ -108,13 +109,13 @@ const HeroDetails = (props) => {
                 />
             </center>
         </Box>
-        <Box>
+        <Box display={"flex"} alignItems={"center"} flexDirection={"column"}>
             <Typography variant="h4" textAlign="center">
                 {t("hero.map")}
             </Typography>
             <YMaps>
                 <div>
-                    <Map height="500px" width="500px" defaultState={{ center: [34.1495070358921, -118.33776346064823], zoom: 17 }}>
+                    <Map height="500px" width="1000px" defaultState={{ center: [34.1495070358921, -118.33776346064823], zoom: 17 }}>
                     <Placemark geometry={[34.1495070358921, -118.33776346064823]} />
                     </Map>
                 </div>
