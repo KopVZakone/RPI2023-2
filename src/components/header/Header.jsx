@@ -1,6 +1,5 @@
 import { Button } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import {Link, useParams} from "react-router-dom";
 
 const Header = () => {
     const { t, i18n} = useTranslation();

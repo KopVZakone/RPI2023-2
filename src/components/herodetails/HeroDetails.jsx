@@ -13,10 +13,9 @@ const HeroDetails = (props) => {
     const hero = heroData.find((hero)=> hero.id_Hero === Number(id));
     if (!hero)
         return <ErrorPage />
-    const currentdata = {lang:lang, site:`/hero/${id}`}
     return (
         <main>
-        <Header currentdata={currentdata}/>    
+        <Header/>    
         <Stack         
         direction="row-reverse"
         justifyContent="space-around"
