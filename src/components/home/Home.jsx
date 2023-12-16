@@ -91,7 +91,7 @@ const Home = (props)=>{
                                 </Typography>
                                 <a href="https://github.com/KirillStolbov" target="_blank" rel="noopener noreferrer">
                                     <Typography>
-                                        https://github.com/KirillStolbov
+                                        @KirillStolbov
                                     </Typography>
                                 </a>
                             </CardContent>
@@ -111,7 +111,7 @@ const Home = (props)=>{
                                 </Typography>
                                 <a href="https://github.com/1Arsen1" target="_blank" rel="noopener noreferrer">
                                     <Typography>
-                                        https://github.com/1Arsen1
+                                        @1Arsen1
                                     </Typography>
                                 </a>
                             </CardContent>
@@ -131,7 +131,7 @@ const Home = (props)=>{
                                 </Typography>
                                 <a href="https://github.com/KopVZakone" target="_blank" rel="noopener noreferrer">
                                     <Typography>
-                                        https://github.com/KopVZakone
+                                        @KopVZakone
                                     </Typography>
                                 </a>
                             </CardContent>
