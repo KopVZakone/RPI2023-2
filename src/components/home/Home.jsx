@@ -20,14 +20,14 @@ const DeveloperCard = ({ name, avatarSrc }) => {
     <Grid item sx={{ minWidth: '150px' }}>
       <Card sm={6} md={4}>
         <CardMedia sx={centerStyles}>
-          <a {...generateLinkProps(githubLink)}>
-            <Avatar alt="logo" src={avatarSrc} sx={{ width: 100, height: 100 }} />
-          </a>
+           <a {...generateLinkProps(githubLink)}>
+               <Avatar alt="logo" src={avatarSrc} sx={{ width: 100, height: 100 }} />
+           </a>
         </CardMedia>
         <CardContent sx={centerStyles}>
-        <a {...generateLinkProps(githubLink)} style={{ textDecoration: 'none' }}>
-            <Typography>{name}</Typography>
-          </a>
+           <a {...generateLinkProps(githubLink)} style={{ textDecoration: 'none' }}>
+               <Typography>{name}</Typography>
+           </a>
         </CardContent>
       </Card>
     </Grid>
@@ -40,44 +40,27 @@ const Home = (props)=> {
     const today = new Date();
     const pos = today.getDate() % heroData.length;
     const hero = heroData.at(pos);
+    const createTypography = (text, variant) => (
+        <Typography
+          component={variant}
+          variant={variant}
+          align="center" >
+          {t("home." + text)}
+        </Typography>
+      );
     return (
         <main>
             <Header/>
             <Box>
-                <Typography
-                component="h1"
-                variant="h1"
-                align="center">
-                    {t("home.portalTitle")}
-                </Typography>
-                <Typography
-                component="h5"
-                variant="h5"
-                align="center">
-                    {t("home.portalDesription")}
-                </Typography>
+                {createTypography("portalTitle", "h1")}
+                {createTypography("portalDesription", "h5")}
             </Box>
             <Container maxWidth="lg">
-                <Typography
-                component="h3"
-                variant="h3"
-                align="center"
-                >
-                    {t("home.heroOfTheDay")}
-                </Typography> 
+                {createTypography("heroOfTheDay", "h3")}
                 <Card
-                    sx={{display: 'flex', flexDirection: 'row' }}
-                >
-                    <Box 
-                    sx={{
-                        width: 500, padding: 3
-                    }}
-                    alignSelf="center"
-                    >
-                    <CardMedia 
-                    component="img" 
-                    image={hero.photo.src}
-                    /> 
+                    sx={{display: 'flex', flexDirection: 'row' }} >
+                    <Box sx={{ width: 500, padding: 3 }} alignSelf="center" >
+                    <CardMedia component="img" image={hero.photo.src} /> 
                     </Box>
                     <Box>
                         <CardContent>
