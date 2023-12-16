@@ -89,9 +89,11 @@ const Home = (props)=>{
                                 <Typography gutterBottom variant="h5" component="h2">
                                     KirillStolbov
                                 </Typography>
-                                <Typography>
-                                    https://github.com/KirillStolbov
-                                </Typography>
+                                <a href="https://github.com/KirillStolbov" target="_blank" rel="noopener noreferrer">
+                                    <Typography>
+                                        https://github.com/KirillStolbov
+                                    </Typography>
+                                </a>
                             </CardContent>
                         </Card>
                     </Grid>
@@ -107,9 +109,11 @@ const Home = (props)=>{
                                 <Typography gutterBottom variant="h5" component="h2">
                                     1Arsen1
                                 </Typography>
-                                <Typography>
-                                    https://github.com/1Arsen1
-                                </Typography>
+                                <a href="https://github.com/1Arsen1" target="_blank" rel="noopener noreferrer">
+                                    <Typography>
+                                        https://github.com/1Arsen1
+                                    </Typography>
+                                </a>
                             </CardContent>
                         </Card>
                 </Grid>
@@ -125,9 +129,11 @@ const Home = (props)=>{
                                 <Typography gutterBottom variant="h5" component="h2">
                                     KopVZakone
                                 </Typography>
-                                <Typography>
-                                    https://github.com/KopVZakone
-                                </Typography>
+                                <a href="https://github.com/KopVZakone" target="_blank" rel="noopener noreferrer">
+                                    <Typography>
+                                        https://github.com/KopVZakone
+                                    </Typography>
+                                </a>
                             </CardContent>
                         </Card>
                     </Grid>
