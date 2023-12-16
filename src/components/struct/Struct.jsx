@@ -295,14 +295,14 @@ const suicideSquadCharacters = [
         ])
       },
       { 
-        src: "/photos/Katana/Kat2.jpg", 
+        src: "/photos/Katana/Kat2.webp", 
         alt: new Map([
           ["en", "Close-up of Katana's focused gaze"],
           ["ru", "Макро с сосредоточенным взглядом Катаны"]
         ])
       },
       { 
-        src: "/photos/Katana/Kat3.jpg", 
+        src: "/photos/Katana/Kat3.webp", 
         alt: new Map([
           ["en", "Katana in a defensive stance"],
           ["ru", "Катана в защитной позе"]
@@ -426,7 +426,7 @@ const suicideSquadCharacters = [
         ])
       },
       { 
-        src: "/photos/Captain Boomerang/CB5.jpg", 
+        src: "/photos/Captain Boomerang/CB5.png", 
         alt: new Map([
           ["en", "Captain Boomerang with a mischievous smile"],
           ["ru", "Капитан Бумеранг с шаловливой улыбкой"]
@@ -629,14 +629,14 @@ const suicideSquadCharacters = [
         ])
       },
       { 
-        src: "/photos/Diablo/Di4.jpg", 
+        src: "/photos/Diablo/Di4.png", 
         alt: new Map([
           ["en", "Diablo surrounded by mystical energy"],
           ["ru", "Дьябло, окруженный мистической энергией"]
         ])
       },
       { 
-        src: "/photos/Diablo/Di5.jpg", 
+        src: "/photos/Diablo/Di5.png", 
         alt: new Map([
           ["en", "Diablo with a menacing expression"],
           ["ru", "Дьябло с угрожающим выражением лица"]
