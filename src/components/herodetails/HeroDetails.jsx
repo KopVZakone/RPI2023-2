@@ -12,7 +12,7 @@ const HeroDetails = (props) => {
     const lang = i18n.language;
     const hero = heroData.find((hero)=> hero.id_Hero === Number(id));
     if (!hero)
-        return <ErrorPage />
+        return <ErrorPage/>
     return (
         <main>
         <Header/>    
@@ -25,7 +25,7 @@ const HeroDetails = (props) => {
             <Box
                 component="img"
                 sx={{
-                    width:300,
+                    height:400,
                 }}
                 alignSelf="center"
                 src={hero.photo.src}
@@ -47,12 +47,16 @@ const HeroDetails = (props) => {
                 </Typography>   
                 <Typography
                     component="h3"
+                    maxWidth={400}
                 >
                     {hero.inf.get(lang)}
                 </Typography>
             </Stack>
         </Stack>
         <Box>
+            <Typography>
+                {t("hero.chronography")}
+            </Typography>
             <Timeline>
                 {hero.сhronography.map((data)=>(
                   <TimelineItem>
@@ -71,6 +75,9 @@ const HeroDetails = (props) => {
             </Timeline>
         </Box>
         <Box>
+            <Typography>
+                {t("hero.gallery")}
+            </Typography>
             <ImageList>
                 {hero.photoGallery.map((data)=>(
                     <ImageListItem>
@@ -84,6 +91,9 @@ const HeroDetails = (props) => {
         <Box
             minHeight={300}
         >
+            <Typography>
+                {hero.youtubeVideo.title.get(lang)}        
+            </Typography> 
             <center>
                 <iframe                    
                     src={`https://www.youtube.com/embed/${hero.youtubeVideo.id}`}
@@ -94,6 +104,9 @@ const HeroDetails = (props) => {
             </center>
         </Box>
         <Box>
+            <Typography>
+                {t("hero.map")}
+            </Typography>
             <YMaps>
                 <div>
                     <Map height="500px" width="500px" defaultState={{ center: [34.1495070358921, -118.33776346064823], zoom: 17 }}>

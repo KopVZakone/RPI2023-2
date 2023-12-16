@@ -1,21 +1,24 @@
-import { Button, Container, Typography } from "@mui/material";
-import {Link, useParams} from "react-router-dom";
+import {Box, Container, Typography } from "@mui/material";
 import Header from './../header/Header'
+import { useTranslation } from "react-i18next";
 
 const ErrorPage = () => {
     
-    const currentdata = {site:"/error"}
+    const {t} = useTranslation();
     return (
         <main>
         <Header/>
-        <Container>
-            <Typography variant="h1">
+        <Box
+        display={"flex"}
+        flexDirection={"column"}
+        >
+            <Typography variant="h1" alignSelf={"center"}>
                 Error 404
             </Typography>
-            <Typography variant="h3">
-                Page not found
+            <Typography variant="h3"  alignSelf={"center"}>
+                {t("error.pageNotFound")}
             </Typography>
-        </Container>
+        </Box>
         </main>    
     )
 };

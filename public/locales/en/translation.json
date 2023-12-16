@@ -14,5 +14,14 @@
     "header" : {
         "mainPage":"Main Page",
         "search":"List of heroes"
+    },
+    "error" : {
+        "pageNotFound":"Page not found"
+    },
+    "hero" : {
+        "biography":"Biography",
+        "chronography":"Chronography",
+        "gallery":"Gallery",
+        "map":"Current location"
     }
 }
