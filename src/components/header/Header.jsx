@@ -7,23 +7,21 @@ const Header = () => {
         <header>  
             <Box display={"flex"} flexDirection={"row-reverse"}>   
                 <Box>
-                    <Button
-                    onClick={()=>i18n.changeLanguage("en")}
-                    >
+                    <Button onClick={()=>i18n.changeLanguage("en")}>
                         en
                     </Button>
-                    <Button
-                    onClick={()=>i18n.changeLanguage("ru")}
-                    >
+                    <Button onClick={()=>i18n.changeLanguage("ru")}>
                         ru
                     </Button>
-                </Box>       
-                <Button href={`/search`} >
-                    {t("header.search")}
-                </Button> 
-                <Button href={`/`}>
-                {t("header.mainPage")}
-                </Button>
+                </Box> 
+                <nav> 
+                    <Button href={`/`}>
+                        {t("header.mainPage")}
+                    </Button>   
+                    <Button href={`/search`} >
+                        {t("header.search")}
+                    </Button>                     
+                </nav> 
             </Box>    
         </header>    
     )
