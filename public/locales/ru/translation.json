@@ -14,5 +14,14 @@
     "header" : {
         "mainPage":"Главная",
         "search":"Список героев"
+    },
+    "error" : {
+        "pageNotFound":"Страница не найдена"
+    },
+    "hero" : {
+        "biography":"Биография",
+        "chronography":"Хронография",
+        "gallery":"Галерея",
+        "map":"Текущее местоположение"
     }
 }
