@@ -6,16 +6,26 @@ import { useTranslation} from "react-i18next";
 const BASE_GITHUB_URL = "https://github.com/";
 const DeveloperCard = ({ name, avatarSrc }) => {
     const githubLink = BASE_GITHUB_URL + name;
+    const centerStyles = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    };
+    const generateLinkProps = (url) => ({
+        href: url,
+        target: "_blank",
+        rel: "noopener noreferrer"
+    });
     return (
     <Grid item sx={{ minWidth: '150px' }}>
       <Card sm={6} md={4}>
-        <CardMedia sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+        <CardMedia sx={centerStyles}>
+          <a {...generateLinkProps(githubLink)}>
             <Avatar alt="logo" src={avatarSrc} sx={{ width: 100, height: 100 }} />
           </a>
         </CardMedia>
-        <CardContent sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+        <CardContent sx={centerStyles}>
+        <a {...generateLinkProps(githubLink)} style={{ textDecoration: 'none' }}>
             <Typography>{name}</Typography>
           </a>
         </CardContent>
@@ -23,7 +33,7 @@ const DeveloperCard = ({ name, avatarSrc }) => {
     </Grid>
     );
  };
-const Home = (props)=>{
+const Home = (props)=> {
     const {heroData} = props;   
     const { t, i18n} = useTranslation();
     const lang = i18n.language;
