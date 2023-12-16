@@ -2,17 +2,21 @@ import {Link, useParams} from "react-router-dom";
 import {Box, ImageList, ImageListItem, Stack, Typography} from "@mui/material";
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
-import { Container } from "@mui/system";
-
+import Header from './../header/Header'
+import ErrorPage from './../errorpage/ErrorPage'
+import { useTranslation } from "react-i18next";
 const HeroDetails = (props) => {
     const {heroData} = props;
-    const {lang,id} = useParams();
-    const key = lang;
+    const {id} = useParams();
+    const { t, i18n} = useTranslation();
+    const lang = i18n.language;
     const hero = heroData.find((hero)=> hero.id_Hero === Number(id));
     if (!hero)
-        return <div>error{Number(id)}</div>
+        return <ErrorPage />
+    const currentdata = {lang:lang, site:`/hero/${id}`}
     return (
         <main>
+        <Header currentdata={currentdata}/>    
         <Stack         
         direction="row-reverse"
         justifyContent="space-around"
@@ -25,7 +29,7 @@ const HeroDetails = (props) => {
                     width:300,
                 }}
                 alignSelf="center"
-                src={hero.photo}
+                src={hero.photo.src}
             />
             <Stack 
             direction="column"
@@ -35,23 +39,23 @@ const HeroDetails = (props) => {
                 <Typography
                     component="h1"
                 >
-                    {hero.name.get(key)}
+                    {hero.name.get(lang)}
                 </Typography>  
                 <Typography
                     component="h2"
                 >
-                    {hero.yearsOfLife.get(key)}
+                    {hero.yearsOfLife.get(lang)}
                 </Typography>   
                 <Typography
                     component="h3"
                 >
-                    {hero.inf.get(key)}
+                    {hero.inf.get(lang)}
                 </Typography>
             </Stack>
         </Stack>
         <Box>
             <Timeline>
-                {hero.biography.map((data)=>(
+                {hero.сhronography.map((data)=>(
                   <TimelineItem>
                     <TimelineOppositeContent>
                         {data.year}
@@ -61,7 +65,7 @@ const HeroDetails = (props) => {
                         <TimelineConnector/>
                     </TimelineSeparator>
                     <TimelineContent>
-                        {data.event.get(key)}    
+                        {data.event.get(lang)}    
                     </TimelineContent>
                   </TimelineItem>  
                 ))}
@@ -72,7 +76,7 @@ const HeroDetails = (props) => {
                 {hero.photoGallery.map((data)=>(
                     <ImageListItem>
                         <img
-                            src={data}
+                            src={data.src}
                         />
                     </ImageListItem>
                 ))}
@@ -83,7 +87,7 @@ const HeroDetails = (props) => {
         >
             <center>
                 <iframe                    
-                    src={`https://www.youtube.com/embed/${hero.youtubeVideo}`}
+                    src={`https://www.youtube.com/embed/${hero.youtubeVideo.id}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     title="Embedded youtube"

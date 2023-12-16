@@ -1,0 +1,18 @@
+{
+    "home" : {
+        "portalTitle":"Портал",
+        "portalDesription":"Описание",
+        "heroOfTheDay":"Герой дня",
+        "seeMoreButton":"Узнать больше",
+        "devsTitle":"Наши разработчики"
+    },
+    "search" : {
+        "listTitle":"Список героев",
+        "listDescription":"Выберите героя себе по вкусу",
+        "seeMoreButton":"Узнать больше"
+    },
+    "header" : {
+        "mainPage":"Главная",
+        "search":"Список героев"
+    }
+}

@@ -1,27 +1,31 @@
 import { Avatar, Box, Button, Card, CardActions, CardContent, CardMedia, Container, Grid, Typography } from "@mui/material";
 import { Link, useParams } from "react-router-dom";
 import React from 'react';
+import Header from './../header/Header'
+import { useTranslation} from "react-i18next";
 
 const Home = (props)=>{
-    const {lang} = useParams();
-    const {heroData} = props;
+    const {heroData} = props;   
+    const { t, i18n} = useTranslation();
+    const lang = i18n.language;
     const today = new Date();
     const pos = today.getDate() % heroData.length;
     const hero = heroData.at(pos);
     return (
         <main>
+            <Header/>
             <Box>
                 <Typography
                 component="h1"
                 variant="h1"
                 align="center">
-                    Portal
+                    {t("home.portalTitle")}
                 </Typography>
                 <Typography
                 component="h5"
                 variant="h5"
                 align="center">
-                    Description
+                    {t("home.portalDesription")}
                 </Typography>
             </Box>
             <Container maxWidth="lg">
@@ -30,7 +34,7 @@ const Home = (props)=>{
                 variant="h3"
                 align="center"
                 >
-                    Hero of the day
+                    {t("home.heroOfTheDay")}
                 </Typography> 
                 <Card
                     sx={{display: 'flex', flexDirection: 'row' }}
@@ -43,7 +47,7 @@ const Home = (props)=>{
                     >
                     <CardMedia 
                     component="img" 
-                    image={hero.photo}
+                    image={hero.photo.src}
                     /> 
                     </Box>
                     <Box>
@@ -57,9 +61,9 @@ const Home = (props)=>{
                         </CardContent>
                         <CardActions>
                             <Button
-                            href={`/${lang}/hero/${hero.id_Hero}`}
+                            href={`/hero/${hero.id_Hero}`}
                             size="large">
-                                See more
+                                {t("home.seeMoreButton")}
                             </Button>
                         </CardActions>
                     </Box>
@@ -70,7 +74,7 @@ const Home = (props)=>{
                 component="h4"
                 variant="h4" 
                 align="center">
-                    Our Developers
+                    {t("home.devsTitle")}
                 </Typography>
                 <Grid container direction="row" justifyContent="space-around" spacing={4}>
                     <Grid item key={1}>

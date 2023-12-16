@@ -4,30 +4,33 @@ import HeroDetails from './components/herodetails/HeroDetails';
 import suicideSquadCharacters from './components/struct/Struct';
 import HeroSearch from './components/hero_list/hero_search';
 import Home from './components/home/Home';
+import ErrorPage from './components/errorpage/ErrorPage';
+import { I18nextProvider } from 'react-i18next';
 
 const router = createBrowserRouter([
   {
-    path: "", element: <Navigate to="/en"/>
+    path: "/", element: <Home heroData={suicideSquadCharacters}/>,
+    errorElement: <ErrorPage/>,
   },
   {
-    path: "/:lang", element: <Home heroData={suicideSquadCharacters}/>
-  },
-  {
-    path: "/search", element: <Navigate to="/en/search"/>
-  },
-  {
-    path: "/:lang/search",
+    path: "/search",
     element: <HeroSearch heroData={suicideSquadCharacters} />,
   },
   {
-    path: "/:lang/hero/:id",
+    path: "/hero/:id",
     element: <HeroDetails heroData={suicideSquadCharacters} />,
+  },
+  {
+    path: "/error",
+    element: <ErrorPage/>
   }
 ]);
 
 function App() {
   return (
-    <RouterProvider router={router}></RouterProvider>
+    <I18nextProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </I18nextProvider>
   );
 }
 

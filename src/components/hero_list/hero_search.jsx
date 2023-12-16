@@ -1,13 +1,17 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { Box, Typography, Grid, CardMedia, CardContent, CardActions, Container, Button, Card } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import Header from "../header/Header";
 
 const HeroSearch = (props) => {
 
     const { heroData } = props;
-    const { lang } = useParams();
+    const { t, i18n} = useTranslation();
+    const lang = i18n.language;
 
     return (
         <main>
+            <Header/>
             <Box
                 sx={{
                     bgcolor: 'background.paper',
@@ -23,10 +27,10 @@ const HeroSearch = (props) => {
                         color="text.primary"
                         gutterBottom
                     >
-                        List of heroes
+                        {t("search.listTitle")}
                     </Typography>
                     <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                        Choose a hero according to your taste
+                        {t("search.listDescription")}
                     </Typography>
                 </Container>
             </Box>
@@ -43,7 +47,7 @@ const HeroSearch = (props) => {
                                         // 16:9
                                         pt: '56.25%',
                                     }}
-                                    image={hero.photo}
+                                    image={hero.photo.src}
                                 />
                                 <CardContent sx={{ flexGrow: 1 }}>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -55,8 +59,8 @@ const HeroSearch = (props) => {
                                 </CardContent>
                                 <CardActions>
                                     <Button
-                                        href={`/${lang}/hero/${hero.id_Hero}`}
-                                        size="small">See more</Button>
+                                        href={`/hero/${hero.id_Hero}`}
+                                        size="small">{t("search.seeMoreButton")}</Button>
                                 </CardActions>
                             </Card>
                         </Grid>

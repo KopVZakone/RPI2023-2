@@ -1,0 +1,18 @@
+{
+    "home" : {
+        "portalTitle":"Portal",
+        "portalDesription":"Description",
+        "heroOfTheDay":"Hero of the day",
+        "seeMoreButton":"See more",
+        "devsTitle":"Our Developers"
+    },
+    "search" : {
+        "listTitle":"List of heroes",
+        "listDescription":"Choose a hero according to your taste",
+        "seeMoreButton":"See more"
+    },
+    "header" : {
+        "mainPage":"Main Page",
+        "search":"List of heroes"
+    }
+}
