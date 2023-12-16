@@ -170,7 +170,7 @@ const suicideSquadCharacters = [
       ["ru", "Не известно"],
     ]),
     photo: {
-      src: "/photos/Rick Flag/RF1.webp",
+      src: "/photos/Rick Flag/RFMain.jpeg",
       alt: new Map([
         ["en", "Rick Flag in a heroic pose"],
         ["ru", "Рик Флэг в героической позе"]
@@ -178,14 +178,14 @@ const suicideSquadCharacters = [
     },
     photoGallery: [
       { 
-        src: "/photos/Rick Flag/RF1.webp", 
+        src: "/photos/Rick Flag/RF1.jpg", 
         alt: new Map([
           ["en", "Rick Flag in a heroic pose"],
           ["ru", "Рик Флэг в героической позе"]
         ])
       },
       { 
-        src: "/photos/Rick Flag/RF2.png", 
+        src: "/photos/Rick Flag/RF2.jpeg", 
         alt: new Map([
           ["en", "Close-up of Rick Flag's determined expression"],
           ["ru", "Макро с решительным выражением лица Рика Флэга"]
@@ -280,7 +280,7 @@ const suicideSquadCharacters = [
       ["ru", "Не известно"],
     ]),
     photo: {
-      src: "/photos/Katana/Kat1.jpg",
+      src: "/photos/Katana/KatMain.jpg",
       alt: new Map([
         ["en", "Katana wielding her deadly sword"],
         ["ru", "Катана смертоносно владеет своим мечом"]
@@ -309,7 +309,7 @@ const suicideSquadCharacters = [
         ])
       },
       { 
-        src: "/photos/Katana/Kat4.jpg", 
+        src: "/photos/Katana/Kat4.png", 
         alt: new Map([
           ["en", "Katana demonstrating precision with her blade"],
           ["ru", "Катана демонстрирует точность своего клинка"]
@@ -390,7 +390,7 @@ const suicideSquadCharacters = [
       ["ru", "Не известно"],
     ]),
     photo: {
-      src: "/photos/Captain Boomerang/CB1.jpg",
+      src: "/photos/Captain Boomerang/CBMain.jpg",
       alt: new Map([
         ["en", "Captain Boomerang with his lethal boomerangs"],
         ["ru", "Капитан Бумеранг с его смертоносными бумерангами"]
@@ -500,7 +500,7 @@ const suicideSquadCharacters = [
       ["ru", "Не известно"]
     ]),
     photo: {
-      src: "/photos/Joker/Jok1.jpg",
+      src: "/photos/Joker/JokMain.jpg",
       alt: new Map([
         ["en", "The Joker with a sinister smile"],
         ["ru", "Джокер с зловещей улыбкой"]])
@@ -600,7 +600,7 @@ const suicideSquadCharacters = [
       ["ru", "Не известно"],
     ]),
     photo: {
-      src: "/photos/Diablo/Di1.jpg",
+      src: "/photos/Diablo/DiMain.jpg",
       alt: new Map([
         ["en", "Diablo in a powerful stance"],
         ["ru", "Дьябло в могущественной позе"]
@@ -629,14 +629,14 @@ const suicideSquadCharacters = [
         ])
       },
       { 
-        src: "/photos/Diablo/Di4.png", 
+        src: "/photos/Diablo/Di4.jpg", 
         alt: new Map([
           ["en", "Diablo surrounded by mystical energy"],
           ["ru", "Дьябло, окруженный мистической энергией"]
         ])
       },
       { 
-        src: "/photos/Diablo/Di5.png", 
+        src: "/photos/Diablo/Di5.jpg", 
         alt: new Map([
           ["en", "Diablo with a menacing expression"],
           ["ru", "Дьябло с угрожающим выражением лица"]
@@ -702,7 +702,7 @@ const suicideSquadCharacters = [
       ["ru", "Не известно"],
     ]),
     photo: {
-      src: "/photos/Dead Shot/DS1.jpg",
+      src: "/photos/Dead Shot/DSMain.jpg",
       alt: new Map([
         ["en", "Deadshot aiming with precision"],
         ["ru", "Дэдшот целится с высокой точностью"]
@@ -738,7 +738,7 @@ const suicideSquadCharacters = [
         ])
       },
       { 
-        src: "/photos/Dead Shot/DS5.png", 
+        src: "/photos/Dead Shot/DS5.jpeg", 
         alt: new Map([
           ["en", "Deadshot showcasing marksmanship"],
           ["ru", "Дэдшот демонстрирует меткость"]
