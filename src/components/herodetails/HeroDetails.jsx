@@ -1,5 +1,5 @@
 import {Link, useParams} from "react-router-dom";
-import {Box, ImageList, ImageListItem, Stack, Typography} from "@mui/material";
+import {Box, Container, ImageList, ImageListItem, Stack, Typography} from "@mui/material";
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import Header from './../header/Header'
@@ -29,32 +29,36 @@ const HeroDetails = (props) => {
                 }}
                 alignSelf="center"
                 src={hero.photo.src}
+                alt={hero.photo.alt.get(lang)}
             />
             <Stack 
             direction="column"
             alignItems="center"
             spacing={2}
             >
-                <Typography
-                    component="h1"
-                >
+                <Typography variant="h4">
                     {hero.name.get(lang)}
                 </Typography>  
-                <Typography
-                    component="h2"
-                >
+                <Typography variant="h5">
                     {hero.yearsOfLife.get(lang)}
                 </Typography>   
-                <Typography
-                    component="h3"
-                    maxWidth={400}
-                >
+                <Typography variant="p" maxWidth={600}>
                     {hero.inf.get(lang)}
                 </Typography>
             </Stack>
         </Stack>
+        <Container>
+            <Typography variant="h4" textAlign="center">
+                {t("hero.biography")}
+            </Typography>
+            <Box>
+                {hero.biography.get(lang).map((data)=>(
+                    <p>{data}</p>    
+                ))}
+            </Box>
+        </Container>
         <Box>
-            <Typography>
+            <Typography variant="h4" textAlign="center">
                 {t("hero.chronography")}
             </Typography>
             <Timeline>
@@ -75,7 +79,7 @@ const HeroDetails = (props) => {
             </Timeline>
         </Box>
         <Box>
-            <Typography>
+            <Typography variant="h4" textAlign="center">
                 {t("hero.gallery")}
             </Typography>
             <ImageList>
@@ -83,6 +87,7 @@ const HeroDetails = (props) => {
                     <ImageListItem>
                         <img
                             src={data.src}
+                            alt={data.alt.get(lang)}
                         />
                     </ImageListItem>
                 ))}
@@ -91,7 +96,7 @@ const HeroDetails = (props) => {
         <Box
             minHeight={300}
         >
-            <Typography>
+            <Typography variant="h4" textAlign="center">
                 {hero.youtubeVideo.title.get(lang)}        
             </Typography> 
             <center>
@@ -104,7 +109,7 @@ const HeroDetails = (props) => {
             </center>
         </Box>
         <Box>
-            <Typography>
+            <Typography variant="h4" textAlign="center">
                 {t("hero.map")}
             </Typography>
             <YMaps>
