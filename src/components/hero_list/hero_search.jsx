@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { Box, Typography, Grid, CardMedia, CardContent, CardActions, Container, Button, Card } from "@mui/material";
+import { Box, Typography, Grid, CardMedia, CardContent, CardActions, Container, Button, Card, TextField } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import Header from "../header/Header";
 
@@ -8,7 +8,7 @@ const HeroSearch = (props) => {
     const { heroData } = props;
     const { t, i18n} = useTranslation();
     const lang = i18n.language;
-
+    const filteredHeroData = heroData.filter((hero)=>{return });
     return (
         <main>
             <Header/>
@@ -34,6 +34,7 @@ const HeroSearch = (props) => {
                     </Typography>
                 </Container>
             </Box>
+            <TextField id="standard-basic" label="Поиск" variant="standard" onChange={()=>{}}/>
             <Container sx={{ py: 8 }} maxWidth="md">
                 <Grid container spacing={4}>
                     {heroData.map((hero) => (

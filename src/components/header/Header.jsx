@@ -5,23 +5,29 @@ const Header = () => {
     const { t, i18n} = useTranslation();
     return (
         <header>  
-            <Box display={"flex"} flexDirection={"row-reverse"}>   
+            <Box display={"flex"} flexDirection={"row-reverse"} sx={{bgcolor:'grey.300'}}>   
                 <Box>
-                    <Button onClick={()=>i18n.changeLanguage("en")}>
+                    <Button 
+                        onClick={()=>i18n.changeLanguage("en")} 
+                        sx={{color: 'common.black'}}
+                    >
                         en
                     </Button>
-                    <Button onClick={()=>i18n.changeLanguage("ru")}>
+                    <Button 
+                        onClick={()=>i18n.changeLanguage("ru")} 
+                        sx={{color: 'common.black'}}
+                    >
                         ru
                     </Button>
                 </Box> 
-                <nav> 
-                    <Button href={`/`}>
+                <Box> 
+                    <Button href={`/`} sx={{pr:6}}>
                         {t("header.mainPage")}
                     </Button>   
-                    <Button href={`/search`} >
+                    <Button href={`/search`} sx={{pr:6}}>
                         {t("header.search")}
                     </Button>                     
-                </nav> 
+                </Box> 
             </Box>    
         </header>    
     )

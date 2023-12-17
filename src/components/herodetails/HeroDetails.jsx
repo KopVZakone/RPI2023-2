@@ -1,5 +1,5 @@
 import {Link, useParams} from "react-router-dom";
-import {Box, Container, ImageList, ImageListItem, ImageListItemBar, Stack, Typography} from "@mui/material";
+import {Box, Container, ImageList, ImageListItem, ImageListItemBar, List, ListItem, Stack, Typography} from "@mui/material";
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import Header from './../header/Header'
@@ -45,9 +45,23 @@ const HeroDetails = (props) => {
                 <Typography variant="p" maxWidth={600}>
                     {hero.inf.get(lang)}
                 </Typography>
+                {/* <Box>
+                    <List>
+                        <ListItem>
+                            <Link component="a" href="#biography">
+                                {t("hero.biography")}
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link component="a" href="#chronography">
+                                {t("hero.chronography")}
+                            </Link>
+                        </ListItem>
+                    </List>
+                </Box> */}
             </Stack>
         </Stack>
-        <Container>
+        <Container id="biography">
             <Typography variant="h4" textAlign="center">
                 {t("hero.biography")}
             </Typography>
@@ -57,7 +71,7 @@ const HeroDetails = (props) => {
                 ))}
             </Box>
         </Container>
-        <Box>
+        <Box id="chronography">
             <Typography variant="h4" textAlign="center">
                 {t("hero.chronography")}
             </Typography>
@@ -82,9 +96,9 @@ const HeroDetails = (props) => {
             <Typography variant="h4" textAlign="center">
                 {t("hero.gallery")}
             </Typography>
-            <ImageList sx={{ width: 900, height: 600 }} cols={1} rowHeight={600}>
-                {hero.photoGallery.map((data)=>(
-                    <ImageListItem Height={700}>
+            <ImageList sx={{ width: 900, height: 600 }} cols={1}>
+                {hero.photoGallery.map((data)=>(    
+                    <ImageListItem height={700}>
                         <img
                             src={data.src}
                             alt={data.alt.get(lang)}
@@ -101,7 +115,9 @@ const HeroDetails = (props) => {
                 {hero.youtubeVideo.title.get(lang)}        
             </Typography> 
             <center>
-                <iframe                    
+                <iframe     
+                    width={900} 
+                    height={700}              
                     src={`https://www.youtube.com/embed/${hero.youtubeVideo.id}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
