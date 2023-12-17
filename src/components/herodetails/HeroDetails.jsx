@@ -1,5 +1,5 @@
-import {Link, useParams} from "react-router-dom";
-import {Box, Container, ImageList, ImageListItem, ImageListItemBar, List, ListItem, Stack, Typography} from "@mui/material";
+import {useParams} from "react-router-dom";
+import {Box, Container, ImageList, ImageListItem, ImageListItemBar, Typography} from "@mui/material";
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import Header from './../header/Header'
@@ -87,11 +87,12 @@ const HeroDetails = (props) => {
             </Timeline>
         </Container>
         <Container
-            sx={{bgcolor:'grey.300',
+            sx={{
+                bgcolor:'grey.300',
                 p:5
             }}
         >
-            <Typography variant="h4" textAlign="center">
+            <Typography variant="h4" textAlign="center" sx={{pb:5}}>
                 {t("hero.gallery")}
             </Typography>
             <ImageList sx={{ maxWidth: 900, height: 600, m:"auto"}} cols={1}>
@@ -139,13 +140,13 @@ const HeroDetails = (props) => {
                 p:5
             }}
         >
-            <Typography variant="h4" textAlign="center">
+            <Typography variant="h4" textAlign="center" sx={{pb:5}}>
                 {t("hero.map")}
             </Typography>
             <Box height="auto" maxWidth="900px" sx={{m:"auto"}}>
                 <YMaps>
                     <Map height="500px" width="100%" defaultState={{ center: [34.1495070358921, -118.33776346064823], zoom: 17 }}>
-                        <Placemark geometry={[34.1495070358921, -118.33776346064823]} />
+                        <Placemark geometry={hero.locationOnMap} />
                     </Map>
                 </YMaps>    
             </Box>

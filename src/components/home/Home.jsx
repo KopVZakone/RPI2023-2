@@ -1,5 +1,4 @@
 import { Avatar, Box, Button, Card, CardActions, CardContent, CardMedia, Container, Grid, Typography } from "@mui/material";
-import { Link, useParams } from "react-router-dom";
 import React from 'react';
 import Header from './../header/Header'
 import { useTranslation} from "react-i18next";
@@ -42,7 +41,7 @@ const Home = (props)=> {
             >
                 {createTypography("heroOfTheDay", "h3")}
                 <Card
-                    sx={{display: 'flex', flexDirection: 'row' }} >
+                    sx={{display: 'flex', flexDirection: 'row', mt:5}} >
                     <Box sx={{ width: 500, padding: 3 }} alignSelf="center" >
                     <CardMedia component="img" image={hero.photo.src} /> 
                     </Box>

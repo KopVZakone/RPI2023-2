@@ -8,17 +8,17 @@ const ErrorPage = () => {
     return (
         <main>
         <Header/>
-        <Box
-        display={"flex"}
-        flexDirection={"column"}
-        >
-            <Typography variant="h1" alignSelf={"center"}>
-                Error 404
-            </Typography>
-            <Typography variant="h3"  alignSelf={"center"}>
-                {t("error.pageNotFound")}
-            </Typography>
-        </Box>
+            <Container
+            display={"flex"}
+            flexDirection={"column"}
+            >
+                <Typography variant="h1" textAlign={"center"}>
+                    Error 404
+                </Typography>
+                <Typography variant="h3"  textAlign={"center"}>
+                    {t("error.pageNotFound")}
+                </Typography>
+            </Container>
         </main>    
     )
 };
