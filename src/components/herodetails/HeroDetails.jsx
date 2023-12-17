@@ -16,11 +16,15 @@ const HeroDetails = (props) => {
     return (
         <main>
         <Header/>    
-        <Stack         
-        direction="row-reverse"
-        justifyContent="space-around"
-        flexWrap="wrap"
-        spacing={2}
+        <Stack        
+            direction="row-reverse"
+            justifyContent="space-around"
+            flexWrap="wrap"
+            spacing={2}
+            sx={{
+                bgcolor:'grey.300',
+                p:5
+            }}
         >
             <Box
                 component="img"
@@ -45,23 +49,13 @@ const HeroDetails = (props) => {
                 <Typography variant="p" maxWidth={600}>
                     {hero.inf.get(lang)}
                 </Typography>
-                {/* <Box>
-                    <List>
-                        <ListItem>
-                            <Link component="a" href="#biography">
-                                {t("hero.biography")}
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link component="a" href="#chronography">
-                                {t("hero.chronography")}
-                            </Link>
-                        </ListItem>
-                    </List>
-                </Box> */}
             </Stack>
         </Stack>
-        <Container id="biography">
+        <Container  
+            sx={{bgcolor:'grey.300',
+                p:5
+            }}
+        >
             <Typography variant="h4" textAlign="center">
                 {t("hero.biography")}
             </Typography>
@@ -71,7 +65,12 @@ const HeroDetails = (props) => {
                 ))}
             </Box>
         </Container>
-        <Box id="chronography">
+        <Container
+            sx={{bgcolor:'grey.300',
+                pt:5,
+                pb:5
+            }}
+        >
             <Typography variant="h4" textAlign="center">
                 {t("hero.chronography")}
             </Typography>
@@ -91,12 +90,16 @@ const HeroDetails = (props) => {
                   </TimelineItem>  
                 ))}
             </Timeline>
-        </Box>
-        <Box display="flex" flexDirection="column" alignItems="center">
+        </Container>
+        <Container
+            sx={{bgcolor:'grey.300',
+                p:5
+            }}
+        >
             <Typography variant="h4" textAlign="center">
                 {t("hero.gallery")}
             </Typography>
-            <ImageList sx={{ width: 900, height: 600 }} cols={1}>
+            <ImageList sx={{ maxWidth: 900, height: 600, m:"auto"}} cols={1}>
                 {hero.photoGallery.map((data)=>(    
                     <ImageListItem height={700}>
                         <img
@@ -107,36 +110,48 @@ const HeroDetails = (props) => {
                     </ImageListItem>
                 ))}
             </ImageList>
-        </Box>
-        <Box
-            minHeight={300}
+        </Container>
+        <Container
+            sx={{
+                bgcolor:'grey.300',
+                p:5
+            }}
         >
             <Typography variant="h4" textAlign="center">
                 {hero.youtubeVideo.title.get(lang)}        
             </Typography> 
-            <center>
+            <Box             
+            sx={{
+                pt:5
+            }}>
                 <iframe     
-                    width={900} 
+                    width="100%" 
                     height={700}              
                     src={`https://www.youtube.com/embed/${hero.youtubeVideo.id}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     title="Embedded youtube"
                 />
-            </center>
-        </Box>
-        <Box display={"flex"} alignItems={"center"} flexDirection={"column"}>
+            </Box>
+        </Container>
+        <Container 
+            sx={{
+                bgcolor:'grey.300',
+                p:5
+            }}
+        >
             <Typography variant="h4" textAlign="center">
                 {t("hero.map")}
             </Typography>
-            <YMaps>
-                <div>
-                    <Map height="500px" width="1000px" defaultState={{ center: [34.1495070358921, -118.33776346064823], zoom: 17 }}>
-                    <Placemark geometry={[34.1495070358921, -118.33776346064823]} />
+            <Box maxHeight="500px" maxWidth="1000px" sx={{m:"auto"}}>
+                <YMaps>
+                    <Map height="100%" width="100%" defaultState={{ center: [34.1495070358921, -118.33776346064823], zoom: 17 }}>
+                        <Placemark geometry={[34.1495070358921, -118.33776346064823]} />
                     </Map>
-                </div>
-            </YMaps>
-        </Box>
+                </YMaps>    
+            </Box>
+            
+        </Container>
         </main>
     )
 };

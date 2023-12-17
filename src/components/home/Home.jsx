@@ -25,11 +25,21 @@ const Home = (props)=> {
     return (
         <main>
             <Header/>
-            <Box>
+            <Container
+                sx={{
+                    bgcolor:'grey.300',
+                    p:5
+                }}
+            >
                 {createTypography("portalTitle", "h1")}
                 {createTypography("portalDesription", "h5")}
-            </Box>
-            <Container maxWidth="lg">
+            </Container>
+            <Container maxWidth="lg"             
+                sx={{
+                    bgcolor:'grey.300',
+                    p:5
+                }}
+            >
                 {createTypography("heroOfTheDay", "h3")}
                 <Card
                     sx={{display: 'flex', flexDirection: 'row' }} >
@@ -55,10 +65,13 @@ const Home = (props)=> {
                     </Box>
                 </Card>   
             </Container>
-            <Container maxWidth="lg" sx={{pt:10}}>
-                <Typography component="h4" variant="h4" align="center">
-                    {t("home.devsTitle")}
-                </Typography>
+            <Container maxWidth="lg"
+                sx={{
+                    bgcolor:'grey.300',
+                    p:5
+                }}
+            >
+                {createTypography("devsTitle", "h3")}
                 <Grid container direction="row" justifyContent="space-around" spacing={4} sx={{pt:10}}>
                     <DeveloperCard name="KirillStolbov" avatarSrc="icons/logo3.png" />
                     <DeveloperCard name="1Arsen1" avatarSrc="icons/logo2.png" />
@@ -75,7 +88,8 @@ const DeveloperCard = ({ name, avatarSrc }) => {
     const centerStyles = {
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        flexDirection:'column'
     };
     const generateLinkProps = (url) => ({
         href: url,
@@ -91,9 +105,16 @@ const DeveloperCard = ({ name, avatarSrc }) => {
            </a>
         </CardMedia>
         <CardContent sx={centerStyles}>
-           <a {...generateLinkProps(githubLink)} style={{ textDecoration: 'none' }}>
+           <Box>
+           <a {...generateLinkProps(githubLink)} style={{ textDecoration: 'none', color: 'black' }}>
                <Typography>{name}</Typography>
            </a>
+           </Box>
+           <Box>
+           <a {...generateLinkProps(githubLink)} style={{ textDecoration: 'none', color: 'black' }}>
+               <Typography>{githubLink}</Typography>
+           </a>
+           </Box>
         </CardContent>
       </Card>
     </Grid>
