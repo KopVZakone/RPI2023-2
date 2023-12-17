@@ -61,7 +61,7 @@ const HeroDetails = (props) => {
             </Typography>
             <Box>
                 {hero.biography.get(lang).map((data)=>(
-                    <p>{data}</p>    
+                    <p key={data}>{data}</p>    
                 ))}
             </Box>
         </Container>
@@ -76,7 +76,7 @@ const HeroDetails = (props) => {
             </Typography>
             <Timeline>
                 {hero.сhronography.map((data)=>(
-                  <TimelineItem>
+                  <TimelineItem key={data.year}>
                     <TimelineOppositeContent>
                         {data.year}
                     </TimelineOppositeContent>
@@ -101,7 +101,7 @@ const HeroDetails = (props) => {
             </Typography>
             <ImageList sx={{ maxWidth: 900, height: 600, m:"auto"}} cols={1}>
                 {hero.photoGallery.map((data)=>(    
-                    <ImageListItem height={700}>
+                    <ImageListItem height={700} key={data.alt.get(lang)}>
                         <img
                             src={data.src}
                             alt={data.alt.get(lang)}
@@ -120,13 +120,17 @@ const HeroDetails = (props) => {
             <Typography variant="h4" textAlign="center">
                 {hero.youtubeVideo.title.get(lang)}        
             </Typography> 
-            <Box             
+            <Box  
+            maxWidth="900px"
+            height="auto"          
             sx={{
-                pt:5
-            }}>
+                pt:5,
+                m:"auto"
+            }}> 
+                
                 <iframe     
-                    width="100%" 
-                    height={700}              
+                    width="100%"     
+                    height="500px"        
                     src={`https://www.youtube.com/embed/${hero.youtubeVideo.id}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -143,9 +147,9 @@ const HeroDetails = (props) => {
             <Typography variant="h4" textAlign="center">
                 {t("hero.map")}
             </Typography>
-            <Box maxHeight="500px" maxWidth="1000px" sx={{m:"auto"}}>
+            <Box height="auto" maxWidth="900px" sx={{m:"auto"}}>
                 <YMaps>
-                    <Map height="100%" width="100%" defaultState={{ center: [34.1495070358921, -118.33776346064823], zoom: 17 }}>
+                    <Map height="500px" width="100%" defaultState={{ center: [34.1495070358921, -118.33776346064823], zoom: 17 }}>
                         <Placemark geometry={[34.1495070358921, -118.33776346064823]} />
                     </Map>
                 </YMaps>    
