@@ -1,4 +1,3 @@
-import './App.css';
 import { createBrowserRouter, Navigate, redirect, RouterProvider } from 'react-router-dom';
 import HeroDetails from './components/herodetails/HeroDetails';
 import suicideSquadCharacters from './components/struct/Struct';

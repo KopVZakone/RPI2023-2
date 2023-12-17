@@ -11,7 +11,7 @@ const Header = () => {
                     flexDirection={"row-reverse"} 
                     maxWidth="1200px"
                     sx={{
-                        backgroundColor:"#BD3131"
+                        backgroundColor:"#e3cece"
                     }}
                 >   
                     <Box>

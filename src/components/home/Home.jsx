@@ -26,7 +26,7 @@ const Home = (props)=> {
             <Header/>
             <Container
                 sx={{
-                    bgcolor:'grey.300',
+                    bgcolor:'#e3dfdf',
                     p:5
                 }}
             >
