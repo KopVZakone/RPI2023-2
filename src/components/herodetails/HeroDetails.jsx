@@ -16,54 +16,51 @@ const HeroDetails = (props) => {
     return (
         <main>
         <Header/>    
-        <Stack         
-        direction="row-reverse"
-        justifyContent="space-around"
-        flexWrap="wrap"
-        spacing={2}
+        <Container
+            sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-around',
+            }}
         >
-            <Box
+            <Box 
                 component="img"
                 sx={{
-                    maxHeight:500
+                    maxHeight: 500,
+                    alignSelf: 'center', 
                 }}
-                alignSelf="center"
                 src={hero.photo.src}
                 alt={hero.photo.alt.get(lang)}
             />
-            <Stack 
-            direction="column"
-            alignItems="center"
-            spacing={2}
-            >
+            <Box textAlign="center">
                 <Typography variant="h3">
                     {hero.name.get(lang)}
                 </Typography>  
                 <Typography variant="h5">
                     {hero.yearsOfLife.get(lang)}
                 </Typography>   
-                <Typography variant="p" maxWidth={600}>
+                <Typography variant="p">
                     {hero.inf.get(lang)}
                 </Typography>
-            </Stack>
-        </Stack>
+            </Box>
+        </Container>
         <Container>
-            <Typography variant="h4" textAlign="center">
+            <Typography variant="h4" textAlign="center" style={{ marginTop: '70px' }}>
                 {t("hero.biography")}
             </Typography>
             <Box>
-                {hero.biography.get(lang).map((data)=>(
-                    <p>{data}</p>    
-                ))}
+                <p style={{ justifyContent: "space-around", margin: '4px', lineHeight: '1.2' }}>
+                    {hero.biography.get(lang)}
+                </p>
             </Box>
-        </Container>
-        <Box>
-            <Typography variant="h4" textAlign="center">
+        </Container>        
+        <Container>
+            <Typography variant="h4" textAlign="center" style={{ marginTop: '40px' }}>
                 {t("hero.chronography")}
             </Typography>
             <Timeline>
                 {hero.сhronography.map((data)=>(
-                  <TimelineItem>
+                  <TimelineItem style={{ marginLeft: '-30px' }}>
                     <TimelineOppositeContent>
                         {data.year}
                     </TimelineOppositeContent>
@@ -77,8 +74,8 @@ const HeroDetails = (props) => {
                   </TimelineItem>  
                 ))}
             </Timeline>
-        </Box>
-        <Box display="flex" flexDirection="column" alignItems="center">
+        </Container>
+        <Box display="flex" flexDirection="column" alignItems="center">           
             <Typography variant="h4" textAlign="center">
                 {t("hero.gallery")}
             </Typography>
@@ -110,7 +107,7 @@ const HeroDetails = (props) => {
             </center>
         </Box>
         <Box display={"flex"} alignItems={"center"} flexDirection={"column"}>
-            <Typography variant="h4" textAlign="center">
+            <Typography variant="h4">
                 {t("hero.map")}
             </Typography>
             <YMaps>
