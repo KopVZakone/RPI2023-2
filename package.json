@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kopvzakone.github.io/RPI2023-2/",
+  "homepage": "https://kopvzakone.github.io/RPI2023-2",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -12,7 +12,6 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^6.1.0",
     "i18next": "^23.7.11",
     "i18next-browser-languagedetector": "^7.2.0",
     "i18next-http-backend": "^2.4.2",
@@ -52,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }

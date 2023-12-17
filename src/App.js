@@ -8,8 +8,8 @@ import { I18nextProvider } from 'react-i18next';
 
 const router = createBrowserRouter([
   {
-    path: "/", element: <Home heroData={suicideSquadCharacters}/>,
-    errorElement: <ErrorPage/>,
+    path: "/", element: <Home heroData={suicideSquadCharacters} />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/search",
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/error",
-    element: <ErrorPage/>
+    element: <ErrorPage />
   }
 ]);
 
