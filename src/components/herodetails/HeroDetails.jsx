@@ -54,7 +54,7 @@ const HeroDetails = (props) => {
             <Typography variant="h4" textAlign="center">
                 {t("hero.biography")}
             </Typography>
-            <Box>
+            <Box maxWidth="900px" sx={{m:"auto", pt:5}}>
                 <p style={{ justifyContent: "space-around", margin: '4px', lineHeight: '1.2' }}>
                     {hero.biography.get(lang)}
                 </p>

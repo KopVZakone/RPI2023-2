@@ -12,7 +12,7 @@ const HeroSearch = (props) => {
             <Header/>
             <Container
                 sx={{
-                    bgcolor: 'background.paper',
+                    bgcolor:'grey.300',
                     pt: 8,
                     pb: 6,
                 }}
@@ -32,7 +32,12 @@ const HeroSearch = (props) => {
                     </Typography>
                 </Container>
             </Container>
-            <Container sx={{ py: 8, bgcolor: 'background.paper', }}>
+            <Container 
+                sx={{ 
+                    py: 8, 
+                    bgcolor:'grey.300',
+                }}
+            >
                 <Grid container spacing={4}>
                     {heroData.map((hero) => (
                         <Grid item key={hero} xs={12} sm={6} md={4}>

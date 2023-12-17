@@ -17,7 +17,7 @@ const Home = (props)=> {
           sx={{
             pt:3
           }}
-          align="center" >
+          textAlign="center" >
           {t("home." + text)}
         </Typography>
       );
